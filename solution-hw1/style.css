@@ -1,0 +1,140 @@
+/* Title & Logo */
+.logo{
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Line */
+hr{
+    width: 1200px;
+    height:3px;
+    background-color:black;
+}
+
+/* Product & Cart */
+.top-link{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+    font-style: bold;
+}
+
+/* Link */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* For Product Gallery */
+.intro{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+/* Style for each product */
+.product-all{
+    text-align: center;
+}
+
+.container{
+    display: inline-block;
+    text-align: left; 
+    margin-bottom: 50px;
+}
+
+.container:hover{
+    box-sizing: border-box;
+    background-color: yellow;
+}
+
+.container:hover .product-name {
+    font-weight: bold; 
+}
+
+.image{
+    border-style: solid;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-name{
+    text-decoration-line: underline;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.price{
+    font-size: 30px;
+    line-height:10px;
+}
+
+
+
+/* Detail Page */
+.detail-intro{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.drop-down{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+}
+
+.summary{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.button{
+    background-color: yellow;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* Cart Page */
+.image-cart{
+    border-style: solid;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.remove{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.text-cart{
+    text-align: center;
+    font-size: 20px;
+    line-height:35px;
+}
+
+.check-out{
+    background-color: yellow;
+    align-items: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 20px;
+    height: 60px
+}
