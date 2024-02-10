@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script defer src="./detail.js"></script>
+</head>
+<body>
+
+    <!-- Title & Lines & Logo -->
+
+    <div class="head-all-container">
+        <div class="head-left-image">
+          <a href="./gallery.html"><img src="../assets/logo/logo-01.svg"></a>
+        </div>
+        
+        <div class="head-right-container">
+          <div class="head-link">
+            <div class="product"><a href="./gallery.html"><mark>Products</mark></a></div>
+            <div><a href="./cart.html">Cart</a></div>
+            <span class="dot"><p>2</p></span>
+          </div>
+    
+          <div>
+            <hr>
+          </div>
+          
+          <div class="head-intro">
+            Our hand-made cinnamon rolls
+          </div>
+        </div>
+    </div>
+
+    <!-- Detail information (text+image) -->
+    <div class="detail-all">
+        <div>
+            <img  class="detail-image" src="../assets/products/original-cinnamon-roll.jpg">
+        </div>
+
+        <div class="detail-info">
+            <p class="detail-intro">
+                Customize our delicious, 
+                hand-made cinammon roll to 
+                your liking!
+            </p>
+
+            <!-- Drop down boxes -->
+            <div class="drop-down-container">
+                <div>
+                    <label class="drop-down"  for="Glazing">Glazing:</label>
+                    <select class="drop-down" id="glazingOptions" onchange="glazingChange()">
+                        <option class="drop-down" value="keep original">Keep original</option>
+                        <option value="sugar milk">Sugar milk</option>
+                        <option value="vanilla milk">Vanilla milk</option>
+                        <option value="double chocolate">Double chocolate</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label class="drop-down" for="Pack size">Pack size:</label>
+                    <select class="drop-down" id="packSizeOptions" onchange="glazingChange()">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Price & Add item -->
+            <br>
+            <div class="summary">
+                <p>
+                    <span id="total-price">$2.49</span> 
+                    <button class="button">Add to Cart</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
