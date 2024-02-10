@@ -31,5 +31,5 @@ function updatePrice(totalPrice) {
     totalPriceElement.innerText = '$' + totalPrice.toFixed(2);
 }
 
-document.querySelector('#glazingOptions').addEventListener('change', glazingChange());
-document.querySelector('#packSizeOptions').addEventListener('change', glazingChange());
+addEventListener('change', glazingChange());
+addEventListener('change', glazingChange());
