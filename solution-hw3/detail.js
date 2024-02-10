@@ -32,4 +32,4 @@ function updatePrice(totalPrice) {
 }
 
 document.querySelector('#glazingOptions').addEventListener('change', glazingChange());
-addEventListener('change', glazingChange());
+document.querySelector('#packSizeOptions').addEventListener('change', glazingChange());
