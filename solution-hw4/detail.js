@@ -47,23 +47,6 @@ productNameElement.textContent = chosenRoll + ' Cinnamon Roll';
 
 const priceElement = document.getElementById('total-price');
 priceElement.textContent = '$' + chosenRollInfo.basePrice.toFixed(2);
-console.log(chosenRollInfo.basePrice)
-
-////////////////// Add roll into the cart ///////////////////////
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
-
-// function addCart() {
-
-// }
-
-const cart = [];
 
 
 /////////////////// Change prices based on drop down box //////////////////////////
@@ -75,10 +58,10 @@ function glazingChange() {
     const defaultPrice = chosenRollInfo.basePrice;
     
     const glazingPrices = {
-        "keep original": 0.00,
-        "sugar milk": 0.00,
-        "vanilla milk": 0.50,
-        "double chocolate": 1.50
+        "Keep original": 0.00,
+        "Sugar milk": 0.00,
+        "Vanilla milk": 0.50,
+        "Double chocolate": 1.50
     };
 
     // get the value of pack size option
@@ -86,7 +69,7 @@ function glazingChange() {
     const selectedPackSize = document.querySelector('#packSizeOptions').value;
 
     let newPrice, totalPrice;
-    
+
     if (priceChange === undefined) {
         newPrice = 0.00;
     } else {
@@ -111,3 +94,29 @@ function updatePrice(totalPrice) {
 
 document.querySelector('#glazingOptions').addEventListener('change', glazingChange());
 document.querySelector('#packSizeOptions').addEventListener('change', glazingChange());
+
+
+
+////////////////// Add roll into the cart ///////////////////////
+
+const cart = [];
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+function addCart() {
+    const rollType = chosenRoll;
+    const glazingOptions = document.querySelector('#glazingOptions').value;
+    const selectedPackSize = document.querySelector('#packSizeOptions').value;
+
+    const rollInstance = new Roll(rollType, glazingOptions, selectedPackSize, chosenRollInfo.basePrice);
+    cart.push(rollInstance);
+    console.log(cart)
+}
+
