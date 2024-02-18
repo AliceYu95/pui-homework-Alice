@@ -16,13 +16,21 @@ function glazingChange() {
     const packSizes = [1, 3, 6, 12]
     const selectedPackSize = document.querySelector('#packSizeOptions').value;
 
+    let newPrice, totalPrice;
+
     if (priceChange === undefined) {
         newPrice = 0.00;
     } else {
         newPrice = glazingPrices[priceChange];
     }
 
-    const totalPrice = (defaultPrice + newPrice) * selectedPackSize;
+    if (selectedPackSize === '6') {
+        totalPrice = (defaultPrice + newPrice) * 5;
+    } else if (selectedPackSize === '12') {
+        totalPrice = (defaultPrice + newPrice) * 10;
+    } else {
+        totalPrice = (defaultPrice + newPrice) * selectedPackSize;
+    }
     updatePrice(totalPrice);
   }
 
