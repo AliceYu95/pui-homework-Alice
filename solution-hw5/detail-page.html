@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script defer src="./roll-data.js"></script> -->
+    <script defer src="./detail.js"></script>
+</head>
+<body>
+
+    <!-- Title & Lines & Logo -->
+
+    <div class="head-all-container">
+        <div class="head-left-image">
+          <a href="./gallery.html"><img src="../assets/logo/logo-01.svg"></a>
+        </div>
+        
+        <div class="head-right-container">
+          <div class="head-link">
+            <div class="product"><a href="./gallery.html"><mark>Products</mark></a></div>
+            <div><a href="./cart.html">Cart</a></div>
+            <span class="dot"><p>2</p></span>
+          </div>
+    
+          <div>
+            <hr>
+          </div>
+          
+          <div id='productName' class="head-intro">
+            Our hand-made cinnamon rolls
+          </div>
+        </div>
+    </div>
+
+    <!-- Detail information (text+image) -->
+    <div class="detail-all">
+        <div>
+            <img id="detailImage" class="detail-image">
+        </div>
+
+        <div class="detail-info">
+            <p class="detail-intro">
+                Customize our delicious, 
+                hand-made cinammon roll to 
+                your liking!
+            </p>
+
+            <!-- Drop down boxes -->
+            <div class="drop-down-container">
+                <div>
+                    <label class="drop-down"  for="Glazing">Glazing:</label>
+                    <select class="drop-down" id="glazingOptions" onchange="glazingChange(this)">
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label class="drop-down" for="Pack size">Pack size:</label>
+                    <select class="drop-down" id="packSizeOptions" onchange="packChange(this)">
+                    </select>
+                </div>
+            </div>
+
+            <!-- Price & Add item -->
+            <br>
+            <div class="summary">
+                <p>
+                    <span id="total-price"></span> 
+                    <button class="button" onclick="addCart()">Add to Cart</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

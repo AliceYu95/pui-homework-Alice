@@ -24,7 +24,6 @@ const rolls = {
         "imageFile": "../assets/products/strawberry-cinnamon-roll.jpg"
     }    
 };
-
 ///////////////////// Update Image ///////////////////////
 
 const queryString = window.location.search;
@@ -35,12 +34,12 @@ const chosenRoll = params.get('roll');
 
 const detailImage = document.getElementById('detailImage');
 
+
 detailImage.src = rolls[chosenRoll].imageFile;
 
 
 /////////////////// Update text ////////////////////////
 const chosenRollInfo = rolls[chosenRoll];
-console.log(chosenRollInfo)
 
 const productNameElement = document.getElementById('productName');
 productNameElement.textContent = chosenRoll + ' Cinnamon Roll';
