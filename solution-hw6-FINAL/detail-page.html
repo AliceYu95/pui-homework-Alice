@@ -19,7 +19,7 @@
           <div class="head-link">
             <div class="product"><a href="./gallery.html"><mark>Products</mark></a></div>
             <div><a href="./cart.html">Cart</a></div>
-            <span class="dot"><p>2</p></span>
+            <span class="dot"><p id="cartNum"></p></span>
           </div>
     
           <div>
@@ -65,7 +65,7 @@
             <div class="summary">
                 <p>
                     <span id="total-price"></span> 
-                    <button class="button" onclick="addCart()">Add to Cart</button>
+                    <button class="button" onclick="addCart()" onclick="updateNum()">Add to Cart</button>
                 </p>
             </div>
         </div>

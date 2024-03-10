@@ -13,12 +13,12 @@ class Roll {
 }
 
 function addCart() {
-    const rollType = chosenRoll; // 'chosenRoll' should be defined in your page script, representing the selected roll type
+    const rollType = chosenRoll; 
     const glazingOptions = document.querySelector('#glazingOptions');
     const selectedGlazingOption = glazingOptions.options[glazingOptions.selectedIndex].text;
     const packSizeOptions = document.querySelector('#packSizeOptions');
     const selectedPackOption = packSizeOptions.options[packSizeOptions.selectedIndex].text;
-    const basePrice = chosenRollInfo.basePrice; // 'chosenRollInfo' should be a reference to the selected roll's information
+    const basePrice = chosenRollInfo.basePrice; 
 
     // Create a new instance of 'Roll' with the selected options
     const rollInstance = new Roll(rollType, selectedGlazingOption, selectedPackOption, basePrice);
@@ -28,11 +28,30 @@ function addCart() {
 
     // Save the updated cart array to local storage
     saveCartToLocalStorage();
+    updateNum();
 
 }
 
 // Function to save the current state of the cart array to local storage
 function saveCartToLocalStorage() {
-    localStorage.setItem('cart', JSON.stringify(cartArray)); // Convert cart array to a string and save in local storage
-    console.log('Current cart:', cartArray); // Log the cart array to the console for debugging
+    localStorage.setItem('cart', JSON.stringify(cartArray)); 
+    console.log('Current cart:', cartArray);
 }
+
+function updateNum() {
+    const cartArrayString = localStorage.getItem('cart'); // Get the cart string from local storage
+    let cartArray = [];
+
+    // Check if cartArrayString is not null then parse it
+    if (cartArrayString) {
+        cartArray = JSON.parse(cartArrayString); // Convert the JSON string back to an array
+    }
+
+    // Update the cart number
+    const cartNum = document.querySelector("#cartNum");
+    cartNum.innerText = cartArray.length; // Update the element with the number of items in the cart
+    console.log(cartArray)
+
+}
+
+updateNum()
