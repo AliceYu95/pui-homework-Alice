@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="style-cart.css">
+    <script defer src="./roll-data.js"></script>
+    <!-- <script defer src="./detail.js"></script> -->
+    <script defer src="./add-roll.js"></script>
+    <script defer src="./cart.js"></script>
+    
+</head>
+<body>
+    <!-- Title & Lines & Logo -->
+
+    <div class="head-all-container">
+        <div class="head-left-image">
+            <a href="./gallery.html"><img src="../assets/logo/logo-01.svg">
+        </div>
+        
+        <div class="head-right-container">
+          <div class="head-link">
+            <div class="product"><a href="./gallery.html">Products</a></mark></div>
+            <div class="cart"><mark>Cart</mark></div>
+            <span class="dot"><p id="cartNum"></p></span>
+          </div>
+    
+          <div class="head-line">
+            <hr>
+          </div>
+          
+          <div class="head-intro">
+            Our hand-made cinnamon rolls
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- Things in the Cart -->
+    <div class="product-all">
+        <div id="roll-list">
+            <template id="roll-template">
+                <div class="product-single">
+                    <!-- image + remove -->
+                    <div>
+                        <img class="image-cart" src="../assets/products/original-cinnamon-roll.jpg">
+                        <div class="image-remove">
+                            <p>
+                                Remove
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="text-cart">
+                        <div id="roll-name">
+                        </div>
+                        
+                        <div id="roll-glazing">
+                        </div>
+                        
+                        <div id="roll-pack-size">
+                        </div>
+                        
+                    </div>
+
+                    <p class="single-total-price">
+                    </p>
+                </div>
+            </template>
+        </div>
+
+        <!-- line -->
+        <div class="bottom-line">
+            <hr>
+        </div>
+
+        <!-- check out -->
+        <div class="checkout">
+            <div class="text-checkout">
+                Total:
+                <div id="total-price"></div>     
+            </div>
+            
+            <div class="button-layout">
+                <button class="button-checkout">Check out</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
