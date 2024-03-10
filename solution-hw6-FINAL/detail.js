@@ -34,8 +34,8 @@ const chosenRoll = params.get('roll');
 
 const detailImage = document.getElementById('detailImage');
 
-
 detailImage.src = rolls[chosenRoll].imageFile;
+
 
 
 /////////////////// Update text ////////////////////////

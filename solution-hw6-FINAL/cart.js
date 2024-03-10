@@ -1,6 +1,6 @@
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     const rollInstance = new Roll(rollType, rollGlazing, packSize, basePrice);
-    cartArray.append(rollInstance);
+    cartArray.push(rollInstance);
     return rollInstance;
 }
 
@@ -12,6 +12,7 @@ function createElement(roll) {
     const clone = template.content.cloneNode(true);
 
     roll.element = clone.querySelector('.product-single');
+    
 
     // delete
     const btnDelete = roll.element.querySelector('.image-remove');
@@ -56,25 +57,30 @@ const allPackSize = {
 };
 
 function updatePrice(roll) {
+    console.log(roll)
     const basePrice = roll.basePrice;
     const glazingPrice = allGlaze[roll.glazing];
     const packPrice = allPackSize[roll.size]; 
 
     const totalPrice = (basePrice + glazingPrice) * packPrice;
     const totalPriceElement = roll.element.querySelector('.single-total-price');
+
     totalPriceElement.innerText = '$' + totalPrice.toFixed(2);
 
     return totalPrice;
 }
 
 // Calculate the final price
-function updateTotalPrice(cartSet) {
+function updateTotalPrice(cartArray) {
     let totalPrice = 0;
 
-    for (const roll of cartArray) {
-        const singlePrice = updatePrice(roll);
+    for (const item of cartArray) {
+        
+        console.log('total' + item)
+        const singlePrice = updatePrice(item);
 
         totalPrice += singlePrice;
+        // console.log(totalPrice)
     }
 
     const totalPriceElement = document.querySelector('#total-price');
@@ -86,34 +92,38 @@ for (const roll of cartArray) {
     createElement(roll);
 }
 
-// Update total price
-updateTotalPrice(cartArray);
-
 // Delete item
 function deleteRoll(roll) {
     // roll.element.remove();
-    // cartArray.remove(roll);
-    cartArray.splice(index, 1)
-    updateTotalPrice(cartSet);
+    // cartArray.pop(roll);
+    const index = cartArray.findIndex(cartItem => cartItem === roll);
+    if (index > -1) {
+        cartArray.splice(index, 1);
+    }
+    updateTotalPrice(cartArray);
     saveCartToLocalStorage();
 }
 
-function submitRoll() {
-    const rollElement = addRoll();
-    createElement(rollElement); 
-  }
-
 
 function retrieveCartFromLocalStorage() {
+    // const cartArrayString = localStorage.getItem('cart');
+    // if (cartArrayString) {
+    //     // Convert string back to array
+    //     cartArray = JSON.parse(cartArrayString); 
+    //     cartArray = cartArray.map(item => new Roll(item.type, item.glazing, item.size, item.basePrice)); 
+    //     // console.log(cartArray)
+    //     console.log('array' + cartArray)
+    //     updateTotalPrice(cartArray);
+    // }
     const cartArrayString = localStorage.getItem('cart');
     // if (cartArrayString) {
     // Convert string back to array
     cartArray = JSON.parse(cartArrayString); 
     // cartArray = cartArray.map(item => new Roll(item.type, item.glazing, item.size, item.basePrice)); 
     console.log(cartArray)
-    for (const roll of cartArray) {
+    for (const rollData of cartArray) {
         
-        const roll = addNewRoll(type, tlazing, size, basePrice);
+        const roll = addNewRoll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
         console.log(roll)
         createElement(roll);
         }
@@ -126,4 +136,9 @@ if (localStorage.getItem('cart') !== null) {
     retrieveCartFromLocalStorage();
 }
 
-console.log(cartSet)
+
+        // for (const rollData of cartArray) {
+            
+        //     const roll = addNewRoll(rollData.type, rollData.glazing, rollData.size, rollData.basePrice);
+        //     createElement(roll);
+        //     }
