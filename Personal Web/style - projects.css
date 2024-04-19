@@ -1,0 +1,70 @@
+/* Header */
+.container-header {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    justify-content: start; 
+    padding: 10px 20px; 
+}
+
+.logo {
+    font-family: "Rubik Glitch", sans-serif;
+    font-size: 1.5em; 
+    font-weight: normal; 
+    text-decoration: none; 
+    color: black; 
+    margin-right: 5px;
+}
+
+.header-normal {
+    font-family: "Rubik Glitch", sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px; 
+}
+
+.header-highlight {
+    font-family: "Rubik Glitch", sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(219, 107, 76);
+}
+
+/* Left semi-circle */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+}
+
+.container {
+    position: relative;
+    width: 370px;
+    height: 370px;
+    overflow: hidden;
+    margin-left: 0px;
+    left: -230px;
+}
+  
+.semi-circle-red {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgb(219, 107, 76);
+    border-radius: 50%;
+    clip-path: inset(0 0 0 70%);
+    z-index: 1;
+}
+
+.semi-circle-gray {
+    width: 70%;
+    height: 70%;
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 50%;
+    clip-path: inset(0 0 0 70%);
+    z-index: 2;
+}

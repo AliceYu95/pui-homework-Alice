@@ -1,0 +1,140 @@
+body {
+    background-image: url('assets/About me-bg.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* My picture */
+.clear-circle {
+    position: absolute;
+    top: 50%;  
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 320px;  
+    height: 320px; 
+    background-image: url('assets/my photo.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.blur-circle {
+    position: absolute;
+    top: 50%;  
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    height: 330px;
+    background-image: url('assets/my photo.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Rotating elipse */
+.ellipse-container {
+    position: absolute;
+    top: 50%;  
+    left: 7.4%;
+    width: 600px; 
+    height: 320px;
+    border-radius: 600px / 320px;
+    border: 0.1px solid rgb(89, 183, 174);
+    transform: translate(0, -50%) rotate(320deg);
+    transform-origin: center;
+}
+
+
+/* Right text */
+.container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.intro-text {
+    text-align: left;
+    margin-left: 50%;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.subtitle span{
+    font-family: "Roboto", sans-serif;
+    font-weight: medium;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.subtitle-normal {
+    color: #555; 
+}
+
+.subtitle-red {
+    color: rgb(219, 107, 76);
+}
+
+.subtitle-blue {
+    color: rgb(89, 183, 174);
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 18px; 
+    color: #555;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+
+/* Header */
+.container-header {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    justify-content: start; 
+    padding: 10px 20px; 
+}
+
+.logo {
+    font-family: "Rubik Glitch", sans-serif;
+    font-size: 1.5em; 
+    font-weight: normal; 
+    margin-right: 10px; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.header-normal {
+    font-family: "Rubik Glitch", sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+}
+
+.header-highlight {
+    font-family: "Rubik Glitch", sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: rgb(219, 107, 76);
+    margin-left: 10px;
+}
