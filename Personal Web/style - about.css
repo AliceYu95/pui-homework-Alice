@@ -5,13 +5,19 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+/* All left part */
+.container-left {
+    /* position: relative; */
+    /* width: 100%;  
+    height: 100%;  */
+    background: black;
+    border:rgb(89, 183, 174);
+}
 
 /* My picture */
-.clear-circle {
+.clear-circle, .blur-circle {
     position: absolute;
     top: 50%;  
     left: 27%;
@@ -22,19 +28,16 @@ body {
     background-size: cover;
     border-radius: 50%;
     overflow: hidden;
-    
+}
+
+.clear-circle {
+    width: 320px;  
+    height: 320px; 
 }
 
 .blur-circle {
-    position: absolute;
-    top: 50%;  
-    left: 27%;
-    transform: translate(-50%, -50%);
     width: 330px;
     height: 330px;
-    background-image: url('assets/my photo.jpg');
-    background-size: cover;
-    border-radius: 50%;
     filter: blur(10px);
     z-index: -1;
 }
@@ -61,6 +64,7 @@ body {
     height: 100vh; 
     padding: 50px;
     box-sizing: border-box;
+    margin-left: 5%;
 }
 
 .intro-text {

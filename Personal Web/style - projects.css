@@ -1,3 +1,69 @@
+/* Background */
+body {
+    background-image: url('assets/Project-bg.png');
+    background-size: cover;
+    background-position: left;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+/* Container for semi-circle and description */
+.all-left-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+
+/* Project Description */
+.project-description {
+    max-width: 400px;
+    margin-left: -24%;
+    z-index: 2;
+    margin-bottom: 30%;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 13%
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color:rgb(54, 54, 54);
+}
+
+/* Background semi-circle */
+.circles-container {
+    position: relative;
+    width: 370px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 0px;
+    left: -230px;
+}
+  
+.semi-circle-red {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgb(219, 107, 76);
+    border-radius: 50%;
+    clip-path: inset(0 0 0 70%);
+    z-index: 1;
+    top: 12px;
+}
+
+
 /* Header */
 .container-header {
     position: absolute; 
@@ -31,40 +97,4 @@
     font-size: 1.2em;
     text-decoration: none;
     color: rgb(219, 107, 76);
-}
-
-/* Left semi-circle */
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center; 
-}
-
-.container {
-    position: relative;
-    width: 370px;
-    height: 370px;
-    overflow: hidden;
-    margin-left: 0px;
-    left: -230px;
-}
-  
-.semi-circle-red {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    border: 1px solid rgb(219, 107, 76);
-    border-radius: 50%;
-    clip-path: inset(0 0 0 70%);
-    z-index: 1;
-}
-
-.semi-circle-gray {
-    width: 70%;
-    height: 70%;
-    border: 1px solid rgb(86, 86, 86);
-    border-radius: 50%;
-    clip-path: inset(0 0 0 70%);
-    z-index: 2;
 }
