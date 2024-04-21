@@ -1,11 +1,13 @@
 /* Background */
 body {
     background-image: url('assets/Project-bg.png');
-    background-size: cover;
-    background-position: left;
     margin: 0;
     height: 100vh;
     display: flex;
+    background-position: center center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 /* Container for all */
@@ -13,14 +15,15 @@ body {
     display: flex; 
     align-items: center; 
     width: 100%; 
+    height:auto;
 }
 
 
 /* Project Description */
 .project-description {
-    max-width: 1000px;
-    margin-left: 15%;
-    margin-right: 5%;
+    max-width: 900px;
+    margin-left: 14%;
+    margin-right: 2%;
     z-index: 2;
     margin-bottom: 20%;
 }
@@ -36,29 +39,8 @@ p {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     font-size: 18px;
-    color:rgb(54, 54, 54);
+    color:rgb(94, 94, 94);
 }
-
-
-/* Background semi-circle */
-/* .circles-container {
-    position: relative;
-    width: 370px;
-    height: 400px;
-    margin-left: 0px;
-    left: -240px;
-}
-  
-.semi-circle-red {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    border: 1px solid rgb(219, 107, 76);
-    border-radius: 50%;
-    clip-path: inset(0 0 0 70%);
-    z-index: 1;
-    top: 12px;
-} */
 
 
 /* Projects */
@@ -68,19 +50,24 @@ p {
     padding: 0;
     width: 700px;
     height: 100vh;
+    position: relative;
 }
+
   
 .left-column,
 .right-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
   
 .left-column {
     width: 50%;
     padding-top: 35vh;
     margin-right: -4%;
+    border: black;
+    border-width: 3px;
 }
   
 .right-column {
@@ -95,16 +82,16 @@ p {
     align-items: flex-start;
 }
 
-
 #project1 { 
-    margin-top: 5vh;
+    margin-top: 5.5vh;
     height: 45vh; 
-    margin-bottom: 25vh;
+    margin-bottom: 21vh;
 }
   
 #project2 {
     margin-top: 5vh;
     height: 45vh; 
+    margin-left: -2px;
 }
   
 #project3 {
@@ -112,22 +99,28 @@ p {
 }
   
 .project-tile h3 {
-    margin: 0 0 1em 0;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
 }
   
 .project-tile img {
-    width: 320px;
+    width: 323px;
     height: 240px;;
 }
 
 
 /* Header */
 .container-header {
-    position: absolute; 
+    position: fixed;
     top: 0; 
     left: 0; 
     justify-content: start; 
     padding: 10px 20px; 
+    background: white;
+    z-index: 3;
 }
 
 .logo {
@@ -154,4 +147,36 @@ p {
     font-size: 1.2em;
     text-decoration: none;
     color: rgb(219, 107, 76);
+}
+
+/* Vertivcal Lines */
+.vertical-line-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-left: -20%;
+    width: 1.5px;
+    background-color: #afafaf;
+}
+
+.vertical-line-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1.5px;
+    left: 0;
+    margin-left: 7.3%;
+    background-color: #afafaf;
+    height: 200%;
+}
+
+.project-main-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin-left: 3.5%;
+    left: 50%; 
+    width: 1.5px;
+    background-color: #afafaf; 
+    height: 200%;
 }
