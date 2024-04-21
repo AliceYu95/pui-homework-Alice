@@ -6,26 +6,23 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
-    align-items: center; 
 }
 
-/* Container for semi-circle and description */
-.all-left-container {
+/* Container for all */
+.all-content-container {
     display: flex; 
     align-items: center; 
-    justify-content: flex-start; 
     width: 100%; 
-    margin: 0 auto;
 }
 
 
 /* Project Description */
 .project-description {
-    max-width: 400px;
-    margin-left: -24%;
+    max-width: 1000px;
+    margin-left: 15%;
+    margin-right: 5%;
     z-index: 2;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
 }
 
 h2 {
@@ -42,14 +39,14 @@ p {
     color:rgb(54, 54, 54);
 }
 
+
 /* Background semi-circle */
-.circles-container {
+/* .circles-container {
     position: relative;
     width: 370px;
     height: 400px;
-    overflow: hidden;
     margin-left: 0px;
-    left: -230px;
+    left: -240px;
 }
   
 .semi-circle-red {
@@ -61,6 +58,66 @@ p {
     clip-path: inset(0 0 0 70%);
     z-index: 1;
     top: 12px;
+} */
+
+
+/* Projects */
+.project-main-content {
+    display: flex;
+    justify-content:flex-end;
+    padding: 0;
+    width: 700px;
+    height: 100vh;
+}
+  
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.left-column {
+    width: 50%;
+    padding-top: 35vh;
+    margin-right: -4%;
+}
+  
+.right-column {
+    width: 50%;
+}
+  
+.project-tile {
+    position: relative;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+#project1 { 
+    margin-top: 5vh;
+    height: 45vh; 
+    margin-bottom: 25vh;
+}
+  
+#project2 {
+    margin-top: 5vh;
+    height: 45vh; 
+}
+  
+#project3 {
+    height: 45vh; 
+}
+  
+.project-tile h3 {
+    margin: 0 0 1em 0;
+}
+  
+.project-tile img {
+    width: 320px;
+    height: 240px;;
 }
 
 
