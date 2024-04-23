@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <head>
     <link rel="stylesheet" type="text/css" href="style - projects.css">
+    <script defer src="JS file/description.js"></script>
+    
     <!-- Font link 1: Rubik+Glitch -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,17 +24,16 @@
     <div class="container-header">
       <a href="cover.html" class="logo">Yu | </a>
       <span class="header-highlight">Projects</span>
-      <a href="about.html" class="header-normal">About me</span>
+      <a href="about.html" class="header-normal">About me</a>
     </div>
 
-    <!-- Container for all left parts -->
+    <!-- Container for all information -->
     <div class="all-content-container">
 
       <!-- Left Project Description -->
       <div class="project-description">
         <h2>My Projects</h2>
-        <p>These are my user experience projects and my architecture projects from 2022 to 2024.</p>
-        <p>These projects showcase my ability to do multiple areas of design.</p>
+        <p>These are my user experience projects and my architecture projects from 2022 to 2024. These projects showcase my ability to do multiple areas of design.</p>
       </div>
 
       <!-- Column for project items -->
@@ -43,31 +44,48 @@
 
         <div class="left-column">
           <!-- Project 2 -->
-          <div class="project-tile" id="project2">
-            <h3>MoodMate</h3>
+          <div class="project-tile" id="project2" data-project-id="project2">
+            <h3>MoodMate <span class="num2">2</span> </h3>
+            
             <img src="assets/MoodMate.png">
           </div>
+
+          <!-- Project 4 -->
+          <div class="project-tile" id="project4" data-project-id="project4">
+            <h3>Weaving Through Walls <span class="num4">4</span> </h3>
+            <img src="assets/Weaving.png">
+          </div>
+
         </div>
 
 
         <!-- Right column -->
         <div class="right-column">
           <!-- Project 1 -->
-          <div class="project-tile" id="project1">
-            <h3>TireRevive</h3>
+          <div class="project-tile" id="project1" data-project-id="project1">
+            <h3>TireRevive <span class="num1">1</span> </h3>
             <img src="assets/TireRevive.png">
           </div>
 
           <div class="vertical-line-left"></div>
-          
+
           <!-- Project 3 -->
-          <div class="project-tile" id="project3">
-            <h3>LinkUp</h3>
-            <img src="assets/Bumble.png">
+          <a href="Linkup.html">
+            <div class="project-tile" id="project3" data-project-id="project3">
+            
+              <h3>LinkUp <span class="num3">3</span></h3>
+              <img src="assets/Bumble.png">
+            
+            </div>
+          </a>
+
+          <!-- Project 5 -->
+          <div class="project-tile" id="project5" data-project-id="project5">
+            <h3>Claw <span class="num5">5</span> </h3>
+            <img src="assets/Claw.png">
           </div>
 
         </div>
-      
         
       </div>
 
