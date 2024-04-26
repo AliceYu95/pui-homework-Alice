@@ -4,31 +4,91 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 /* Back icon */
 .exit-icon {
-    width: 4%;
-    height: 8%;
+    position: fixed;
+    top: 8%;
+    left: 3.5%;
+    z-index: 10;
+    width: 60px;
+    height: 55px;
 }
 
+/* Head image and title */
+.head-intro {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.head-intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.head-intro img {
+    width: 45%;
+    height: 85%;
+    margin-right: 0px;
+}
+
+.head-intro h1 {
+    color: #EBA328;
+    font-size: 60px; 
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.head-intro p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #EBA328;
+}
+
+/* Introduction */
+.introduction {
+    max-width: 50%;
+    margin: auto;
+    padding: 16px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: 410;
+    color: #626262;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #EBA328;
+}
 
 /* Header */
 .container-header {
-    position: absolute; 
+    position: fixed;
     top: 0; 
     left: 0; 
     justify-content: start; 
     padding: 10px 20px; 
+    background: white;
+    z-index: 3;
 }
 
 .logo {
     font-family: "Rubik Glitch", sans-serif;
     font-size: 1.5em; 
     font-weight: normal; 
-    margin-right: 10px; 
     text-decoration: none; 
     color: black; 
+    margin-right: 5px;
 }
 
 .header-normal {
@@ -37,13 +97,13 @@ body {
     font-size: 0.8em;
     text-decoration: none;
     color: black;
+    margin-left: 15px; 
 }
 
 .header-highlight {
-    font-family: "Rubik Glitch", sans-serif;
+    font-family: "Rubik Glitch",t sans-serif;
     font-weight: normal;
     font-size: 1.2em;
     text-decoration: none;
     color: rgb(219, 107, 76);
-    margin-left: 10px;
 }

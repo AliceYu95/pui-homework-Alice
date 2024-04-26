@@ -80,3 +80,38 @@ body {
 }
 
 
+/* Responsive for less than 600px */
+@media screen and (max-width: 600px) {
+  .rubik-glitch-title {
+    font-family: "Rubik Glitch";
+    font-weight: 100;
+    font-size: 2.4em; /* Adjust the size if necessary */
+    font-style: normal;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .choice-link-one, .choice-link-two {
+    font-size: 0.9em; /* Smaller font size for links if needed */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background: #f2f2f2; /* New background color for small screens */
+    /* You can also use a background-image if you prefer */
+    /* background-image: url('path/to/image.jpg'); */
+  }
+
+  .rubik-glitch-title {
+    font-size: 2em; /* Further reduce the font size for very small screens */
+  }
+
+  .typewriter {
+    font-size: 0.8em; /* Adjust typewriter text size as needed */
+  }
+
+  .choices {
+    padding: 10px 0; /* Adjust spacing for better layout on smaller screens */
+  }
+}
