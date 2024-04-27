@@ -82,33 +82,39 @@ body {
 
 /* Responsive for less than 600px */
 @media screen and (max-width: 600px) {
+  /* title */
   .rubik-glitch-title {
-    font-family: "Rubik Glitch";
     font-weight: 100;
-    font-size: 2.4em; /* Adjust the size if necessary */
+    font-size: 3.4em;
     font-style: normal;
-    margin-left: 0px;
-    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-top: -50px;
+  }
+
+  /* two choices align vertically */
+  .choices {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
   }
 
   .choice-link-one, .choice-link-two {
-    font-size: 0.9em; /* Smaller font size for links if needed */
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: -340px;
   }
-}
 
-@media screen and (max-width: 500px) {
+
   body {
-    background: #f2f2f2; /* New background color for small screens */
-    /* You can also use a background-image if you prefer */
-    /* background-image: url('path/to/image.jpg'); */
-  }
-
-  .rubik-glitch-title {
-    font-size: 2em; /* Further reduce the font size for very small screens */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .typewriter {
-    font-size: 0.8em; /* Adjust typewriter text size as needed */
+    font-size: 1.3em; /* Adjust typewriter text size as needed */
   }
 
   .choices {
