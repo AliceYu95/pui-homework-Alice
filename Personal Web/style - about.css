@@ -140,7 +140,6 @@ h1 {
         background-size: 200% 40%;
         background-repeat: no-repeat;
         overflow-x: hidden;
-        overflow-y: hidden;
     }
 
     /* Positioning picture and ellipse at the top and centering them */
@@ -155,17 +154,17 @@ h1 {
     }
 
     .clear-circle, .blur-circle {
-        width: 240px;  
-        height: 240px; 
+        width: 230px;  
+        height: 230px; 
     }
 
     .blur-circle {
-        width: 250px; 
-        height: 250px;
+        width: 240px; 
+        height: 240px;
     }
 
     .ellipse-container {
-        width: 420px;
+        width: 400px;
         height: 240px;
         border-radius: 400px / 240px;
     }
