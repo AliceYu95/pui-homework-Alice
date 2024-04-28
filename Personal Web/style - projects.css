@@ -282,7 +282,7 @@ a {
         display: none;
     }
 
-    .project-tile h3 span {
+    .project-tile h3 span, .project-tile::after {
         display: none;
     }
 
@@ -309,7 +309,7 @@ a {
         top: 0;
         left: 0;
         width: 100%;
-        height: 32vh;
+        height: 35%;
         background-color: rgb(255, 255, 255);
         z-index: 9;
     }
@@ -349,8 +349,6 @@ a {
     #project2 {
         margin-bottom: -60%;
     }
-
-
 
     /* Header */
     .container-header {
