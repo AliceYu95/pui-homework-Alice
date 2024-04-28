@@ -139,6 +139,8 @@ h1 {
         background-position: 4% 2%;
         background-size: 200% 40%;
         background-repeat: no-repeat;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     /* Positioning picture and ellipse at the top and centering them */
@@ -160,29 +162,29 @@ h1 {
     .blur-circle {
         width: 250px; 
         height: 250px;
-        filter: blur(8px); 
     }
 
     .ellipse-container {
-        width: 440px;
+        width: 420px;
         height: 240px;
-        border-radius: 420px / 240px;
+        border-radius: 400px / 240px;
     }
 
     /* Adjusting right container to display vertically below */
     .container-right {
         display: block; 
-        padding: 170px 60px; 
+        padding-top: 190px;
         text-align: center; 
     }
 
     .intro-text {
         margin-left: 0;
+        margin-bottom: 0;
     }
 
     /* Responsive font sizes to ensure text remains legible on small devices */
     h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .subtitle span {
