@@ -1,6 +1,6 @@
 /* Background */
 body {
-    background-image: url('assets/Project-bg.png');
+    background-image: url('../assets/Project-bg.png');
     margin: 0;
     height: 100vh;
     display: flex;
@@ -28,7 +28,7 @@ body {
     margin-bottom: 20%;
 }
 
-h2 {
+h1 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 27px;
@@ -102,7 +102,7 @@ p {
 
 
 /* Each project's title & number */
-.project-tile h3 {
+.project-tile h2 {
     position: relative;
     margin-bottom: 3px;
     margin-left: 2px;
@@ -111,7 +111,7 @@ p {
     font-size: 20px;
 }
 
-.project-tile h3 span {
+.project-tile h2 span {
     position: absolute;
     top: 50%;
     transform: translate(50%, -50%);
@@ -156,7 +156,7 @@ a {
     z-index: 10;
 }
 
-.project-tile:hover h3{
+.project-tile:hover h2{
     transform: scale(1.09); 
     transition: transform 0.3s ease; 
     color: rgb(219, 107, 76);
@@ -241,7 +241,7 @@ a {
     font-weight: normal;
     font-size: 1.2em;
     text-decoration: none;
-    color: rgb(219, 107, 76);
+    color: rgb(182, 85, 58);
 }
 
 /* Vertivcal Lines */
@@ -282,7 +282,7 @@ a {
         display: none;
     }
 
-    .project-tile h3 span, .project-tile::after {
+    .project-tile h2 span, .project-tile::after {
         display: none;
     }
 
