@@ -42,7 +42,7 @@ body {
 }
 
 .head-intro h1 {
-    color: #EBA328;
+    color: #c3871f;
     font-size: 60px; 
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -51,7 +51,7 @@ body {
 .head-intro p {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #EBA328;
+    color: #c3871f;
 }
 
 /* Introduction */
@@ -68,7 +68,7 @@ body {
 h2 {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #EBA328;
+    color: #c3871f;
 }
 
 /* Header */

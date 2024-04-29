@@ -40,7 +40,7 @@ body {
     width: 590px; 
     height: 320px;
     border-radius: 580px / 320px;
-    border: 0.1px solid rgb(52, 137, 130);
+    border: 0.1px solid rgb(89, 183, 174);
     transform: translate(-50%, -50%) rotate(320deg);
     transform-origin: center;
 }
@@ -84,7 +84,7 @@ h1 {
 }
 
 .subtitle-blue {
-    color: rgb(89, 183, 174);
+    color: rgb(50, 133, 125);
 }
 
 .text {
