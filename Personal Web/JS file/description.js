@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to update the description
   function updateDescription(projectId) {
-    const projectTitle = document.querySelector(".project-description h2");
+    const projectTitle = document.querySelector(".project-description h1");
     const projectParagraphs = document.querySelectorAll(".project-description p");
 
     // Set the new title and description
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to reset the description
   function resetDescription() {
-    const projectTitle = document.querySelector(".project-description h2");
+    const projectTitle = document.querySelector(".project-description h1");
     const projectParagraphs = document.querySelectorAll(".project-description p");
 
     // reset to original title and description
