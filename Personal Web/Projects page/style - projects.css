@@ -18,7 +18,6 @@ body {
     height:auto;
 }
 
-
 /* Project Description on the left */
 .project-description {
     max-width: 500px;
@@ -42,7 +41,6 @@ p {
     font-size: 18px;
     color:rgb(94, 94, 94);
 }
-
 
 /* Projects - two columns*/
 .project-main-content {
@@ -149,7 +147,7 @@ a {
     height: 225px;
 }
 
-/* Hover effect for image: every project have different effect*/
+/* Hover effect for image: every project have different effect color*/
 .project-tile:hover img {
     transform: scale(1.05); 
     transition: transform 0.3s ease; 

@@ -111,6 +111,7 @@ h2 {
 
 /* Responsive */
 @media screen and (max-width: 600px) {
+    /* Smaller font + adapt layout */
     .head-intro {
         flex-direction: column;
         margin-right: 0;

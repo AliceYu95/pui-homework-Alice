@@ -1,3 +1,4 @@
+/* Overall style */
 body {
     background-image: url('../assets/About\ me-bg.png');
     background-size: cover;
@@ -68,6 +69,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Subtitles */
 .subtitle span{
     font-family: "Roboto", sans-serif;
     font-weight: medium;
@@ -87,6 +89,7 @@ h1 {
     color: rgb(50, 133, 125);
 }
 
+/* Regular text */
 .text {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
