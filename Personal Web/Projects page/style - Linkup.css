@@ -51,6 +51,7 @@ body {
 .head-intro p {
     font-family: "Roboto", sans-serif;
     font-size: 20px;
+    font-weight: bold;
     color: #c3871f;
 }
 
