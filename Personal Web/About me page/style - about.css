@@ -1,5 +1,5 @@
 body {
-    background-image: url('assets/About me-bg.png');
+    background-image: url('../assets/About\ me-bg.png');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     transform: translate(-50%, -50%);
     width: 320px;  
     height: 320px; 
-    background-image: url('assets/my photo.jpg');
+    background-image: url('../assets/my\ photo.jpg');
     background-size: cover;
     border-radius: 50%;
     overflow: hidden;
@@ -40,7 +40,7 @@ body {
     width: 590px; 
     height: 320px;
     border-radius: 580px / 320px;
-    border: 0.1px solid rgb(89, 183, 174);
+    border: 0.1px solid rgb(52, 137, 130);
     transform: translate(-50%, -50%) rotate(320deg);
     transform-origin: center;
 }
